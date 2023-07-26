@@ -1,0 +1,38 @@
+.email {
+    position: fixed;
+    right: 4rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &-link {
+        writing-mode: vertical-lr;
+        text-decoration: none;
+        font-size: var(--tsm2);
+        color: var(--lightest-slate);
+        font-family: var(--fira-code);
+        letter-spacing: 0.1rem;
+        padding: 10px;
+        outline: 2px dashed transparent;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: var(--theme-color);
+        }
+
+        &:focus {
+            outline-color: var(--theme-color);
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 2px;
+        height: 90px;
+        background-color: var(--lightest-slate);
+        display: block;
+        margin: 0 auto;
+    }
+
+}
