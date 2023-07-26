@@ -1,0 +1,45 @@
+.hero {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 60vh;
+
+    &-title {
+        font-size: var(--tsm2);
+        color: var(--theme-color);
+        font-family: var(--fira-code);
+
+        &-large {
+            color: var(--light-slate);
+            font-family: var(--raleway);
+            font-size: var(--tgiant);
+        }
+
+        &-sub {
+            color: var(--lightest-slate)
+        }
+    }
+
+    &-text {
+        color: var(--slate);
+        font-family: var(--raleway);
+        font-weight: 600;
+        margin-right: 40%;
+        letter-spacing: 0.07rem;
+        line-height: 1.6rem;
+        font-size: var(--tlarge);
+    }
+
+    &-button {
+        margin-top: 2rem;
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: var(--tsm1);
+            font-family: var(--raleway);
+        }
+    }
+}
