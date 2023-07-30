@@ -19,6 +19,8 @@
     --tx2large: 32px;
     --tgiant: clamp(40px, 8vw, 80px);
 
+    --blur: rgba(10, 25, 47, 0.85);
+
     @media screen and (max-width:480px) {
         --tx2large: 25px;
     }
