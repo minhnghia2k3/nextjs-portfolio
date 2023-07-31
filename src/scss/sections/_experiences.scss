@@ -121,6 +121,7 @@
                     font-weight: 500;
                     color: var(--slate);
                     position: relative;
+                    text-align: start;
 
                     &::before {
                         content: "▹";
@@ -134,5 +135,53 @@
             }
         }
 
+    }
+
+    // max-width 968px is for tablet
+    @media screen and (max-width:968px) {
+        .title {
+            h2 {
+                &::after {
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    //max-width 600px is for mobile
+    @media screen and (max-width:600px) {
+        margin: 5rem auto;
+
+        .container {
+            grid-template-columns: 1fr;
+            padding: 1rem;
+        }
+
+        .exp-details {
+            height: max-content;
+        }
+
+        .exp-slider {
+            display: flex;
+            overflow-x: scroll;
+
+            &::before {
+                display: none;
+            }
+
+            .underline {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .title {
+            h2 {
+                &::after {
+                    display: none;
+                }
+            }
+        }
     }
 }

@@ -120,7 +120,18 @@ nav {
         }
     }
 
+    @media screen and (max-width:600px) {
+        .wrapper {
+            padding: 0;
+
+            .nav-responsive {
+                width: min(70vw, 400px);
+            }
+        }
+    }
+
     .blur-nav {
+        padding: 0 2rem;
         height: 80px;
         position: fixed;
         top: 0;

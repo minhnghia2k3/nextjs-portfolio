@@ -55,4 +55,14 @@
         }
 
     }
+
+    // breakpoint for tablet
+    @media screen and (max-width: 1080px) {
+        left: 2rem;
+    }
+
+    // breakpoint for desktop
+    @media screen and (max-width:768px) {
+        display: none;
+    }
 }

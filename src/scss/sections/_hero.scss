@@ -31,6 +31,7 @@
         letter-spacing: 0.07rem;
         line-height: 1.6rem;
         font-size: var(--tlarge);
+        text-align: start;
     }
 
     &-button {
@@ -40,6 +41,14 @@
             padding: 1rem 2rem;
             font-size: var(--tsm1);
             font-family: var(--raleway);
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        margin-top: 0;
+
+        &-text {
+            width: 90%;
         }
     }
 }
