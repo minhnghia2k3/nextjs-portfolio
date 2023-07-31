@@ -47,6 +47,7 @@
                 letter-spacing: 0.07rem;
                 line-height: 1.7rem;
                 font-family: var(--raleway);
+                text-align: start;
             }
 
             &-list {
@@ -131,5 +132,93 @@
             }
         }
 
+    }
+
+    // max-width 1080px for tablet
+    @media screen and (max-width: 1080px) {
+        margin: 5rem auto;
+
+        &-grid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &-photo {
+                .overlay {
+                    width: 223px;
+                    height: 223px;
+                }
+
+                &-container {
+                    width: 223px;
+                    height: 223px;
+                }
+            }
+
+            &-info {
+                &-list {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+
+    // max-width 768px for tablet
+    @media screen and (max-width:768px) {
+        margin: 5rem auto;
+
+        .title {
+            h2 {
+                &::after {
+                    width: 200px;
+                }
+            }
+        }
+
+        &-grid {
+            &-photo {
+                margin-top: 3rem;
+
+                .overlay {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                &-container {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            &-info {
+                &-text {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    // max-width 480px for mobile
+    @media screen and (max-width:480px) {
+        h2 {
+            &::after {
+                width: 100px !important;
+            }
+        }
+
+        &-grid {
+            &-photo {
+                .overlay {
+                    width: 223px;
+                    height: 223px;
+                }
+
+                &-container {
+                    width: 223px;
+                    height: 223px;
+                }
+            }
+        }
     }
 }
