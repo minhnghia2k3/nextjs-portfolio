@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { motion } from "framer-motion";
 import {
     FiGithub,
     FiInstagram,
@@ -16,7 +17,15 @@ function SocialIcons() {
         { name: "Twitter", icon: <FiTwitter />, link: "/" },
     ]
     return (
-        <div className="social-icons">
+        <motion.div
+            className="social-icons"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+                delay: 2
+            }}>
             <ul className="social-icons-list">
                 {socialLinks.map(({ name, icon, link }) => (
                     <li key={name} title={name} className="social-icons-list-item">
@@ -24,7 +33,8 @@ function SocialIcons() {
                     </li>
                 ))}
             </ul>
-        </div>
+        </motion.div>
+
     );
 }
 

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { motion } from "framer-motion";
 function Project() {
     const projectsData = [
         {
@@ -63,7 +64,17 @@ function Project() {
         },
     ];
     return (
-        <div className='projects' id='work'>
+        <motion.div
+            className='projects'
+            id='work'
+            whileInView='visible'
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            variants={{
+                visible: { opacity: 1, y: -50 },
+                hidden: { opacity: 0, y: 0 }
+            }}
+        >
             <div className="title">
                 <h2>Some thing I&apos;ve built</h2>
             </div>
@@ -117,7 +128,7 @@ function Project() {
                     )
                 )}
             </div>
-        </div>
+        </motion.div>
     );
 }
 
