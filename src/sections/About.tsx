@@ -21,26 +21,24 @@ function About() {
             <div className='about-grid'>
                 <div className="about-grid-info">
                     <p className="about-grid-info-text">
-                        Bonjour! My name is Kishan, and I am passionate about creating
-                        digital content for the web. My interest in web development was
-                        sparked in 2016 when I created my first project called Lavish, a
-                        social media app built using React and Node.js.
+                        Hey there, tech enthusiast!🖐️ <br />
+                        I&apos;m a Junior Student at Dong Nai Technology University School,
+                        with experience at Quoc Thuan Company and teaching Coding at Technology School MindX.
                     </p>
                     <p className="about-grid-info-text">
-                        Fast-forward to today, I specialize in designing and developing
-                        high-quality solutions that delight our clients and exceed their
-                        expectations at{" "}
-                        <Link href="https://rapidops.com" className="link" target="_blank">
-                            Rapidops.
+                        Fast-forward to today, I specialize in designing and developing high-quality websites that serve teamwork needs, like &quot;Trello,&quot; &quot;Webchat,&quot; and more.
+                        Proudly part of the&nbsp;
+                        <Link href="/" className="link" target="_blank">
+                            DNTU
                         </Link>
+                        &nbsp;team! 🚀.
                     </p>
 
                     <p className="about-grid-info-text">
                         Additionally, I share my knowledge and passion with the world
-                        through my YouTube channel, where I demonstrate how to build
-                        full-stack applications.
+                        through my Github, where I share my projects and my experience.
                     </p>
-                    <p className="about-grid-info-text">
+                    {/* <p className="about-grid-info-text">
                         I am also working on a new project called&nbsp;
                         <Link
                             className="link"
@@ -50,7 +48,7 @@ function About() {
                             FrontendVita,
                         </Link>
                         &nbsp;aimed at enhancing frontend development skills.
-                    </p>
+                    </p> */}
                     <p className="about-grid-info-text">
                         Here are a few technologies I’ve been working with recently:
                     </p>
@@ -74,7 +72,7 @@ function About() {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </motion.div >
     );
 }
 
