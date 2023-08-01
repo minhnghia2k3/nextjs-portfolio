@@ -1,9 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from "framer-motion";
 function About() {
     return (
-        <div className='about' id='about'>
+        <motion.div
+            className='about'
+            id='about'
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            variants={{
+                visible: { opacity: 1, y: -50 },
+                hidden: { opacity: 0, y: 0 }
+            }}
+        >
             <div className="title">
                 <h2>About Me</h2>
             </div>
@@ -63,7 +74,7 @@ function About() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
