@@ -25,7 +25,7 @@ function Contact() {
                 I&apos;ll try my best to get back to you!
             </p>
             <div className="contact-cta">
-                <Button text="Say Hello" link=":mailto:BrozennVN@gmail.com" />
+                <Button text="Say Hello" link="mailto:BrozennVN@gmail.com" />
             </div>
         </motion.div>
     );
