@@ -19,18 +19,20 @@ function Experience() {
             end: "Present",
             shortDescription: [
                 "Switching to programming from the second year of university.",
-                "Throughout my work, I have learned a lot of knowledge about programming, teaching, and teamwork.",
+                "Throughout my work, I have learned a lot of knowledge about Basic Programming, Game Development, Web Development, Robotics, and thinking logically.",
+                "Furthermore, I have taught many students from many different ages, from 6 to 18 years old.",
+                "Working in MindX is my opportunity to learn and improve my knowledge and skills.",
             ],
         },
         {
             name: "QTC",
             role: "Technical Staff",
-            url: "/",
+            url: "https://www.facebook.com/groups/1028105011136702",
             start: "January 2022",
             end: "January 2023",
             shortDescription: [
                 "Starting an internship early in the first year of university to learn a lot of knowledge as well as work experience in a business",
-                "I had experience working on a network devices such as 'Cisco', 'SonicWall', 'Fortinet', 'Checkpoint'.",
+                "I had experience working on a network devices such as Cisco, SonicWall, Fortinet, Checkpoint.",
                 "Throughout my work, I have learned a lot of knowledge about network devices, network security, and network infrastructure.",
                 "Furthermore, I also represent the company to train new students / employees on their knowledge.",
             ],
@@ -69,7 +71,7 @@ function Experience() {
                             <span>{experiences[selected]?.role}</span>
                             <span className='exp-details-position-company'>
                                 &nbsp;@&nbsp;
-                                <Link className='link' href={experiences[selected].url}>{experiences[selected].name}</Link>
+                                <Link target="_blank" className='link' href={experiences[selected].url}>{experiences[selected].name}</Link>
                             </span>
                         </h3>
                         <p className='exp-details-range'>

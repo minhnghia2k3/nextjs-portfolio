@@ -6,56 +6,55 @@ import { motion } from "framer-motion";
 function Project() {
     const projectsData = [
         {
-            image: "/project1.png",
-            projectName: "Pokedex",
-            projectLink: "https://netlify.com",
+            image: "/trello_project.png",
+            projectName: "Trello Clone",
+            projectLink: "",
             projectDescription:
-                "This is a web application that uses the PokeAPI to display information about different Pokemon, including their evolution levels and details. You can compare multiple Pokemon using a queue, and add them to your personal list using Firebase's Firestore database.",
+                "This web project focus on teamwork and project management. It has a lot of features like creating, editing, deleting, and moving cards. It also has a dark mode and is highly scalable.",
             projectTech: [
+                "MongoDB",
+                "Express",
                 "React",
+                "NodeJS",
                 "Redux Toolkit",
-                "SCSS",
-                "Firebase",
-                "Typescript",
-                "PokeApi",
+                "Material UI",
+                "Javascript",
             ],
             projectExternalLinks: {
-                github: "",
+                github: "https://github.com/minhnghia2k3/trello_web",
                 externalLink: "",
             },
         },
         {
-            image: "/project2.png",
-            projectName: "Realtime Chat App",
-            projectLink: "https://netlify.com",
+            image: "/whatsapp_project.jpg",
+            projectName: "Whatsapp Clone",
+            projectLink: "",
             projectDescription:
-                "This is a chat app made with React and Node.js that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React. It has 300+ stars on GitHub and over 180k views on YouTube.",
+                "This is a chat app made with NextJS and NodeJS that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React.",
             projectTech: [
                 "React",
+                "NextJS",
+                "Node.js",
+                "Express",
+                "Tailwind CSS",
                 "Sockets",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Styled Components",
+                "Prisma",
+                "Firebase",
+                "PortgresSQL",
             ],
             projectExternalLinks: {
-                github: "",
+                github: "https://github.com/minhnghia2k3/clone_whatsapp",
                 externalLink: "",
             },
         },
         {
-            image: "/project3.png",
-            projectName: "Netflix App",
-            projectLink: "https://netlify.com",
+            image: "/loader.gif",
+            projectName: "Updating...",
+            projectLink: "",
             projectDescription:
-                "I made a Netflix copy with TMBD Api. It has infinite scrolling and lets you watch movies by genre. You can also add movies to your favorites list.",
+                "Updating...",
             projectTech: [
-                "React",
-                "Node.js",
-                "Firebase",
-                "MongoDB",
-                "Express",
-                "Redux Toolkit",
+                ""
             ],
             projectExternalLinks: {
                 github: "",
@@ -109,6 +108,7 @@ function Project() {
                                     <li className="project-info-links-item">
                                         <Link
                                             href={projectExternalLinks.github}
+                                            target="_blank"
                                             className="project-info-links-item-link"
                                         >
                                             <FiGithub />

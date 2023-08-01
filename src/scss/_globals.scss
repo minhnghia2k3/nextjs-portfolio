@@ -21,6 +21,7 @@ html {
     text-decoration: none;
     position: relative;
     color: var(--theme-color);
+    font-weight: 600;
 
     &::after {
         content: "";

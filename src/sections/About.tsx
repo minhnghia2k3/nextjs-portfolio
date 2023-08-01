@@ -23,12 +23,27 @@ function About() {
                     <p className="about-grid-info-text">
                         Hey there, tech enthusiast!🖐️ <br />
                         I&apos;m a Junior Student at Dong Nai Technology University School,
-                        with experience at Quoc Thuan Company and teaching Coding at Technology School MindX.
+                        with experience at&nbsp;
+                        <Link className="link" href="https://www.facebook.com/groups/1028105011136702" target='_blank'>
+                            Quoc Thuan Company&nbsp;
+                        </Link>
+                        and teaching Coding at Technology School&nbsp;
+                        <Link className="link" href="https://mindx.edu.vn/" target="_blank">
+                            MindX.
+                        </Link>
                     </p>
                     <p className="about-grid-info-text">
-                        Fast-forward to today, I specialize in designing and developing high-quality websites that serve teamwork needs, like &quot;Trello,&quot; &quot;Webchat,&quot; and more.
+                        Fast-forward to today, I specialize in learning & developing high-quality websites that serve teamwork needs and project managing, like
+                        <Link className='link' target="_blank" href="https://trello.com/vi">
+                            &nbsp;Trello&nbsp;
+                        </Link>
+                        ,
+                        <Link className='link' target="_blank" href="https://web.whatsapp.com/">
+                            &nbsp;Whatsapp&nbsp;
+                        </Link>
+                        and more.
                         Proudly part of the&nbsp;
-                        <Link href="/" className="link" target="_blank">
+                        <Link href="/" className="link" target="_blank" onClick={(event) => event.preventDefault()} >
                             DNTU
                         </Link>
                         &nbsp;team! 🚀.
@@ -68,7 +83,7 @@ function About() {
                     <div className="overlay"></div>
                     <div className="overlay-border"></div>
                     <div className="about-grid-photo-container">
-                        <Image src='/avatar.png' alt='profile' fill />
+                        <Image src='/avatar.jfif' alt='profile' fill />
                     </div>
                 </div>
             </div>

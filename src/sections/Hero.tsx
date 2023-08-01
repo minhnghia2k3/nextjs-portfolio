@@ -49,7 +49,7 @@ function Hero() {
                 I&apos;m a software engineer with expertise in creating top-notch
                 digital experiences. My current focus is on developing products that are
                 accessible and centered around user needs, as part of the team at&nbsp;
-                <Link href="/" target="_blank" className="link">
+                <Link href="/" target="_blank" className="link" onClick={(e) => e.preventDefault()}>
                     DNTU.
                 </Link>
             </motion.p>
@@ -62,7 +62,7 @@ function Hero() {
                     ease: "easeInOut",
                     delay: 1.2
                 }}>
-                <Button text="Check out my youtube" link="/" />
+                <Button text="Check out my github" link="https://github.com/minhnghia2k3" />
             </motion.div>
 
         </div>

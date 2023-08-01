@@ -56,6 +56,7 @@
                 grid-template-columns: repeat(3, 1fr);
                 list-style-type: none;
                 padding: 0 3rem;
+                gap: 1rem;
 
                 &-item {
                     font-family: var(--raleway);
@@ -222,4 +223,8 @@
             }
         }
     }
+}
+
+.disabled-link {
+    pointer-events: none;
 }
