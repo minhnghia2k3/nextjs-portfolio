@@ -110,7 +110,7 @@ function Navbar() {
                             ease: "easeInOut",
                             delay: 0.3 + sectionsLink.length * 0.1
                         }}>
-                        <Button text="Resume" link="http://localhost:3000/resume.pdf" />
+                        <Button text="Resume" link="/resume.pdf" />
                     </motion.div>
                 </div>
             </div>
