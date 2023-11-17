@@ -7,21 +7,20 @@ function Project() {
     const projectsData = [
         {
             image: "/trello_project.png",
-            projectName: "Trello Clone",
+            projectName: "Phuong Thao Furniture",
             projectLink: "",
             projectDescription:
-                "This web project focus on teamwork and project management. It has a lot of features like creating, editing, deleting, and moving cards. It also has a dark mode and is highly scalable.",
+                "Website is dedicated to providing customers with a wide selection of high-quality furniture options.",
             projectTech: [
                 "MongoDB",
                 "Express",
-                "React",
+                "NextJS 13",
                 "NodeJS",
-                "Redux Toolkit",
-                "Material UI",
+                "TailwindCSS",
                 "Javascript",
             ],
             projectExternalLinks: {
-                github: "https://github.com/minhnghia2k3/trello_web",
+                github: "",
                 externalLink: "",
             },
         },
@@ -48,17 +47,44 @@ function Project() {
             },
         },
         {
-            image: "/loader.gif",
-            projectName: "Updating...",
-            projectLink: "",
+            image: "/promptopia-project.png",
+            projectName: "Promptopia",
+            projectLink: "https://minhnghia2k3-promptopia.vercel.app/",
             projectDescription:
-                "Updating...",
+                "This website focus share AI prompt between users. This website is just focus on learning & practicing how NextJS work.",
             projectTech: [
-                ""
+                "Nextjs 13",
+                "Javascript",
+                "Server-less",
+                "SEO",
+                "App Router",
+                "NextAuth",
+                "MongoDB",
+                "Google Providers"
             ],
             projectExternalLinks: {
-                github: "",
-                externalLink: "",
+                github: "https://github.com/minhnghia2k3/promptopia",
+                externalLink: "https://minhnghia2k3-promptopia.vercel.app/",
+            },
+        },
+        {
+            image: "/threads-app.png",
+            projectName: "Threads app",
+            projectLink: "https://minhnghia2k3-threads-app.vercel.app/",
+            projectDescription:
+                "Clone website called Threads. This website is a social media website that allows users to share their thoughts and ideas with the world.",
+            projectTech: [
+                "Nextjs 13",
+                "TypeScript",
+                "Server-less",
+                "App Router",
+                "Clerk",
+                "MongoDB",
+                "Google Providers"
+            ],
+            projectExternalLinks: {
+                github: "https://github.com/minhnghia2k3/threads_app",
+                externalLink: "https://minhnghia2k3-threads-app.vercel.app/",
             },
         },
     ];
@@ -89,9 +115,7 @@ function Project() {
                         <div key={projectName} className="project">
                             <div className="project-image">
                                 <div className="project-overlay"></div>
-                                <div className="project-image-container">
-                                    <Image src={image} fill alt={projectName} quality={100}></Image>
-                                </div>
+                                <Image src={image} width={600} height={350} alt={projectName} quality={100}></Image>
                             </div>
                             <div className="project-info">
                                 <div className="project-info-overline">Feature Project</div>

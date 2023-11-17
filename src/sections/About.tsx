@@ -34,12 +34,17 @@ function About() {
                     </p>
                     <p className="about-grid-info-text">
                         Fast-forward to today, I specialize in learning & developing high-quality websites that serve teamwork needs and project managing, like
-                        <Link className='link' target="_blank" href="https://trello.com/vi">
-                            &nbsp;Trello&nbsp;
-                        </Link>
-                        ,
-                        <Link className='link' target="_blank" href="https://web.whatsapp.com/">
-                            &nbsp;Whatsapp&nbsp;
+                        <Link className='link' target="_blank" href="https://minhnghia2k3-promptopia.vercel.app/">
+                            &nbsp;Phuong Thao Furinture
+                        </Link>,
+                        <Link className='link' target="_blank" href="https://github.com/minhnghia2k3/clone_whatsapp">
+                            &nbsp;Whatsapp
+                        </Link>,
+                        <Link className='link' target="_blank" href="https://minhnghia2k3-promptopia.vercel.app/">
+                            &nbsp;Promptopia
+                        </Link>,
+                        <Link className='link' target="_blank" href="https://minhnghia2k3-threads-app.vercel.app/">
+                            &nbsp;Threads app&nbsp;
                         </Link>
                         and more.
                         Proudly part of the&nbsp;
@@ -53,30 +58,16 @@ function About() {
                         Additionally, I share my knowledge and passion with the world
                         through my Github, where I share my projects and my experience.
                     </p>
-                    {/* <p className="about-grid-info-text">
-                        I am also working on a new project called&nbsp;
-                        <Link
-                            className="link"
-                            target="_blank"
-                            href="https://frontendvita.com"
-                        >
-                            FrontendVita,
-                        </Link>
-                        &nbsp;aimed at enhancing frontend development skills.
-                    </p> */}
                     <p className="about-grid-info-text">
                         Here are a few technologies I’ve been working with recently:
                     </p>
                     <ul className="about-grid-info-list">
                         <li className="about-grid-info-list-item">React</li>
-                        <li className="about-grid-info-list-item">React Native</li>
                         <li className="about-grid-info-list-item">Next.js</li>
-                        <li className="about-grid-info-list-item">Typescript</li>
-                        <li className="about-grid-info-list-item">Redux Toolkit</li>
                         <li className="about-grid-info-list-item">Node.js</li>
-                        <li className="about-grid-info-list-item">Elasticsearch</li>
-                        <li className="about-grid-info-list-item">Kibana</li>
-                        <li className="about-grid-info-list-item">CSS</li>
+                        <li className="about-grid-info-list-item">Typescript</li>
+                        <li className="about-grid-info-list-item">TailwindCSS</li>
+                        <li className="about-grid-info-list-item">MongoDB</li>
                     </ul>
                 </div>
                 <div className="about-grid-photo">
