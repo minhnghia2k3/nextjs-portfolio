@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Project() {
     const projectsData = [
         {
-            image: "/trello_project.png",
+            image: "/loader.gif",
             projectName: "Phuong Thao Furniture",
             projectLink: "",
             projectDescription:

@@ -63,3 +63,7 @@ html {
         border-radius: 10px;
     }
 }
+
+.disabled-link {
+    pointer-events: none;
+}
